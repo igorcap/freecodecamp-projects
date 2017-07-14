@@ -1,0 +1,50 @@
+body {
+  background: #4ECDC4;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(left, #556270, #4ECDC4);
+background: -o-linear-gradient(left, #556270, #4ECDC4);
+background: linear-gradient(to right, #556270, #4ECDC4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+h1 {
+  background: #2980b9;
+  color: white;
+  margin: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Josefin Slab', serif;
+  text-align: center;
+}
+
+button {
+	font-size: 18px;
+	background: #f7f7f7;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 13px 13px 13px 20px;
+  border: 0;
+}
+
+p {
+  text-align: right;
+  padding-right: 4px;
+}
+
+
+
+.container {
+	width: 560px;
+	margin: 100px auto;
+	background: #f7f7f7;
+	box-shadow: 0 0 3px rgba(0,0,0,0.1);
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+
+
+}
