@@ -1,0 +1,69 @@
+body {
+  background: #FDFC47;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #24FE41, #FDFC47);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #24FE41, #FDFC47); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  width: 70px;
+  height: 70px;
+}
+
+
+.details {
+  color: rgb(101, 101, 101);
+}
+
+.jumbotron {
+	margin: 100px auto;
+	background: #f7f7f7;
+	box-shadow: 0 0 3px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.temp {
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+
+.veryhot {
+  background: #F2994A;
+  background: -webkit-linear-gradient(to right, #F2C94C, #F2994A);
+  background: linear-gradient(to right, #F2C94C, #F2994A);
+}
+
+.hot {
+  background: #F2994A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #F2C94C, #F2994A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #F2C94C, #F2994A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.average {
+  background: #22c1c3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #fdbb2d, #22c1c3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #fdbb2d, #22c1c3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.cold {
+  background: #4CA1AF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.verycold {
+  background: #C9D6FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#weather {
+  font-size: 2em;
+}
