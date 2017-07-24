@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wikipedia Viewer</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="input-field">
+
+        <input id="search" type="text" class="validate">
+        <label for="search">Search</label>
+        <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;" tabindex="-1" />
+
+      </div>
+    </div>
+
+    <div class="row">    
+        <div id="results"></div>
+
+
+    </div>
+  </div>
+
+
+
+
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="./assets/js/script.js">
+  </script>
+</body>
+
+</html>
