@@ -1,4 +1,5 @@
 favorites();
+popular();
 streamsByGame("League of Legends")
 streamsByGame("Hearthstone")
 streamsByGame("Counter-Strike: Global Offensive")
@@ -51,7 +52,6 @@ function streamsByGame(game) {
       "Client-ID": "fobdilcs5alzhn5k0x9jn377pu7yxuh"
     },
     success: function(data){
-      console.log(data);
       for (let i = 0; i < data.streams.length; i++) {
         if(data.streams[i]){
           result += `
@@ -79,6 +79,44 @@ function streamsByGame(game) {
         } else if (game == "Counter-Strike: Global Offensive"){
           $('#csgo').html(result);
         }
+      }
+    }
+  });
+  return "<h3>Not working</h3>";
+}
+
+function popular() {
+  var result = "";
+  $.ajax({
+    url: 'https://api.twitch.tv/kraken/streams/',
+    headers: {
+      "Client-ID": "fobdilcs5alzhn5k0x9jn377pu7yxuh"
+    },
+    success: function(data){
+      console.log(data);
+      for (let i = 0; i < data.streams.length; i++) {
+        if(data.streams[i]){
+          result += `
+          <div class="col s12 m4">
+            <div class="card medium">
+              <div class="card-image">
+                <img src="`+ data.streams[i].preview.large +`" alt="`+data.streams[i].channel.status+`">
+              </div>
+              <div class="card-content">
+                <p>`+ data.streams[i].channel.status +`</p>
+                <p>`+ data.streams[i].viewers +` viewers on `+ data.streams[i].channel.name +`</p>
+              </div>
+              <div class="card-action">
+                <a href="`+ data.streams[i].channel.url +`">Click to Watch</a>
+              </div>
+            </div>
+          </div>
+
+          `
+        }
+
+          $('#popular').html(result);
+
       }
     }
   });
