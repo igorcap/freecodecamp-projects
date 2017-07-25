@@ -3,7 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wikipedia Viewer</title>
+  <title>Twitch Streams</title>
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
@@ -12,16 +12,24 @@
 
 <body>
 
-  <div class="container">
-    <div class="row">
-      <div class="input-field">
+  <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Twitch Streams</a>
 
-        <input id="search" type="text" class="validate">
-        <label for="search">Search</label>
-        <input type="submit" style="position: absolute; left: -9999px; width: 1px; height: 1px;" tabindex="-1" />
-
-      </div>
     </div>
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a href="#favorites">Favorites</a></li>
+        <li class="tab"><a href="#league">League of Legends</a></li>
+        <li class="tab"><a class="active" href="#hearthstone">Hearthstone</a></li>
+        <li class="tab"><a href="#csgo">Counter-Strike: Global Offensive</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="league" class="col s12">League</div>
+  <div id="hearthstone" class="col s12">Hearthstone</div>
+  <div id="csgo" class="col s12">Csgo</div>
+  <div id="favorites" class="col s12">Favorites</div>
 
     <div class="row">
         <div id="results"></div>
